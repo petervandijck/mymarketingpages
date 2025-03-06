@@ -1,22 +1,24 @@
 {
-  "name": "petervandijck/laravel-marketing-pages",
-  "description": "A Laravel package with starter marketing pages",
+  "name": "petervandijck/mymarketingpages",
+  "description": "A set of default blade marketing pages and elements for Laravel projects",
   "type": "library",
   "license": "MIT",
-  "autoload": {
-    "psr-4": {
-      "Petervandijck\\MarketingPages\\": "src/"
-    }
-  },
   "authors": [
     {
       "name": "Peter Van Dijck",
       "email": "petervandijck@gmail.com"
     }
   ],
+  "minimum-stability": "dev",
+  "prefer-stable": true,
   "require": {
     "php": "^8.2",
-    "illuminate/support": "^11.0"
+    "illuminate/support": "^11.0|^12.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Petervandijck\\MarketingPages\\": "src/"
+    }
   },
   "extra": {
     "laravel": {
@@ -24,7 +26,5 @@
         "Petervandijck\\MarketingPages\\MarketingPagesServiceProvider"
       ]
     }
-  },
-  "minimum-stability": "dev",
-  "prefer-stable": true
+  }
 }
