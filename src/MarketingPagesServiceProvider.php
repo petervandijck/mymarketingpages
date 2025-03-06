@@ -13,19 +13,48 @@ class MarketingPagesServiceProvider extends ServiceProvider
         $this->loadViewsFrom(__DIR__ . '/resources/views', 'marketing');
 
         // Register components directly - make sure this comes after loadViewsFrom
+        // Header components
         Blade::component('marketing::blocks.header.simple', 'marketing.header.simple');
+        Blade::component('marketing::blocks.header.centered', 'marketing.header.centered');
+        Blade::component('marketing::blocks.header.centered-with-eyebrow', 'marketing.header.centered-with-eyebrow');
+
+// CTA components
         Blade::component('marketing::blocks.cta.simple-centered', 'marketing.cta.simple-centered');
-        Blade::component('marketing::blocks.cta.simple-centered-dark', 'marketing.cta.simple-centered-dark');
+        Blade::component('marketing::blocks.cta.simple-centered-dark', 'marketing.cta.dark');
         Blade::component('marketing::blocks.cta.simple-stacked', 'marketing.cta.simple-stacked');
-        Blade::component('marketing::blocks.cta.simple', 'marketing.cta.simple');
-        Blade::component('marketing::blocks.cta.dark', 'marketing.cta.dark');
         Blade::component('marketing::blocks.cta.simple-left', 'marketing.cta.simple-left');
-        Blade::component('marketing::blocks.faq.simple', 'marketing.faq.simple');
+
+// Team components
+        Blade::component('marketing::blocks.team.small-images', 'marketing.team.small-images');
+        Blade::component('marketing::blocks.team.grid', 'marketing.team.grid');
+
+// Testimonial components
+        Blade::component('marketing::blocks.testimonial.with-star-rating', 'marketing.testimonial.with-star-rating');
+        Blade::component('marketing::blocks.testimonial.off-white-grid', 'marketing.testimonial.off-white-grid');
+
+// Pricing components
+        Blade::component('marketing::blocks.pricing.three-tiers', 'marketing.pricing.three-tiers');
+        Blade::component('marketing::blocks.pricing.two-tiers', 'marketing.pricing.two-tiers');
+        Blade::component('marketing::blocks.pricing.single-price-with-details', 'marketing.pricing.single');
+
+// Hero components
+        Blade::component('marketing::blocks.hero.split-with-screenshot', 'marketing.hero.split');
+        Blade::component('marketing::blocks.hero.simple-centered', 'marketing.hero.simple');
+
+// Footer components
         Blade::component('marketing::blocks.footer.simple', 'marketing.footer.simple');
-        Blade::component('marketing::blocks.footer.dark', 'marketing.footer.dark');
+        Blade::component('marketing::blocks.footer.simple-dark', 'marketing.footer.dark');
+        Blade::component('marketing::blocks.footer.4-column', 'marketing.footer.4-column');
+        Blade::component('marketing::blocks.footer.4-column-dark', 'marketing.footer.4-column-dark');
 
+// Logo cloud component
+        Blade::component('marketing::blocks.logo-cloud.simple', 'marketing.logo-cloud.simple');
 
+// FAQ components
+        Blade::component('marketing::blocks.faq.offset', 'marketing.faq.simple');
 
+// Stats component
+        Blade::component('marketing::blocks.stats.simple', 'marketing.stats.simple');
 
 
         // Add more components manually as needed
