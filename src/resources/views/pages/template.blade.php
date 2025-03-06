@@ -1,6 +1,11 @@
+@extends('marketing.modules.global.layout')
+
+@section('pagetitle', 'Templates')
+
+@section('content')
 
 
-{{-- Basic usage with default values --}}
+    {{-- Basic usage with default values --}}
 <x-marketing.faq.simple />
 
 {{-- Advanced usage with custom values --}}
@@ -115,3 +120,4 @@
 
 
 
+@endsection
