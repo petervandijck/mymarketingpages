@@ -11,18 +11,18 @@ class MarketingPagesServiceProvider extends ServiceProvider
     {
         // Load views from your package
         $this->loadViewsFrom(__DIR__ . '/resources/views', 'marketing');
-
-        // Register components directly - make sure this comes after loadViewsFrom
-        // Header components
+// Register components directly - make sure this comes after loadViewsFrom
+// Header components
         Blade::component('marketing::blocks.header.simple', 'marketing.header.simple');
         Blade::component('marketing::blocks.header.centered', 'marketing.header.centered');
         Blade::component('marketing::blocks.header.centered-with-eyebrow', 'marketing.header.centered-with-eyebrow');
 
 // CTA components
         Blade::component('marketing::blocks.cta.simple-centered', 'marketing.cta.simple-centered');
-        Blade::component('marketing::blocks.cta.simple-centered-dark', 'marketing.cta.dark');
+        Blade::component('marketing::blocks.cta.simple-centered-dark', 'marketing.cta.simple-centered-dark');
         Blade::component('marketing::blocks.cta.simple-stacked', 'marketing.cta.simple-stacked');
-        Blade::component('marketing::blocks.cta.simple-left', 'marketing.cta.simple-left');
+// Remove this one if the file doesn't exist
+// Blade::component('marketing::blocks.cta.simple-left', 'marketing.cta.simple-left');
 
 // Team components
         Blade::component('marketing::blocks.team.small-images', 'marketing.team.small-images');
@@ -35,15 +35,15 @@ class MarketingPagesServiceProvider extends ServiceProvider
 // Pricing components
         Blade::component('marketing::blocks.pricing.three-tiers', 'marketing.pricing.three-tiers');
         Blade::component('marketing::blocks.pricing.two-tiers', 'marketing.pricing.two-tiers');
-        Blade::component('marketing::blocks.pricing.single-price-with-details', 'marketing.pricing.single');
+        Blade::component('marketing::blocks.pricing.single-price-with-details', 'marketing.pricing.single-price-with-details');
 
 // Hero components
-        Blade::component('marketing::blocks.hero.split-with-screenshot', 'marketing.hero.split');
-        Blade::component('marketing::blocks.hero.simple-centered', 'marketing.hero.simple');
+        Blade::component('marketing::blocks.hero.split-with-screenshot', 'marketing.hero.split-with-screenshot');
+        Blade::component('marketing::blocks.hero.simple-centered', 'marketing.hero.simple-centered');
 
 // Footer components
         Blade::component('marketing::blocks.footer.simple', 'marketing.footer.simple');
-        Blade::component('marketing::blocks.footer.simple-dark', 'marketing.footer.dark');
+        Blade::component('marketing::blocks.footer.simple-dark', 'marketing.footer.simple-dark');
         Blade::component('marketing::blocks.footer.4-column', 'marketing.footer.4-column');
         Blade::component('marketing::blocks.footer.4-column-dark', 'marketing.footer.4-column-dark');
 
@@ -51,12 +51,10 @@ class MarketingPagesServiceProvider extends ServiceProvider
         Blade::component('marketing::blocks.logo-cloud.simple', 'marketing.logo-cloud.simple');
 
 // FAQ components
-        Blade::component('marketing::blocks.faq.offset', 'marketing.faq.simple');
+        Blade::component('marketing::blocks.faq.offset', 'marketing.faq.offset');
 
 // Stats component
         Blade::component('marketing::blocks.stats.simple', 'marketing.stats.simple');
-
-
         // Add more components manually as needed
 
         // Publish views

@@ -7,10 +7,10 @@
     {{-- CTA Components --}}
 
     {{-- Simple Centered - Basic --}}
-    <x-marketing.blocks.cta.simple-centered />
+    <x-marketing.cta.simple-centered />
 
     {{-- Simple Centered - Custom --}}
-    <x-marketing.blocks.cta.simple-centered
+    <x-marketing.cta.simple-centered
             title="Start your journey with us today"
             description="Join thousands of satisfied customers who have transformed their business with our platform."
             primaryButtonText="Sign up now"
@@ -20,10 +20,10 @@
     />
 
     {{-- Simple Centered Dark - Basic --}}
-    <x-marketing.blocks.cta.simple-centered-dark />
+    <x-marketing.cta.simple-centered-dark />
 
     {{-- Simple Centered Dark - Custom --}}
-    <x-marketing.blocks.cta.simple-centered-dark
+    <x-marketing.cta.simple-centered-dark
             title="Ready to elevate your business?"
             description="Our premium tools are designed to help you scale faster and with less effort."
             primaryButtonText="Get Premium"
@@ -33,10 +33,10 @@
     />
 
     {{-- Simple Stacked - Basic --}}
-    <x-marketing.blocks.cta.simple-stacked />
+    <x-marketing.cta.simple-stacked />
 
     {{-- Simple Stacked - Custom --}}
-    <x-marketing.blocks.cta.simple-stacked
+    <x-marketing.cta.simple-stacked
             title="Ready to boost your productivity?"
             primaryButtonText="Start now"
             primaryButtonUrl="/start"
@@ -47,10 +47,10 @@
     {{-- FAQ Components --}}
 
     {{-- Offset - Basic --}}
-    <x-marketing.blocks.faq.offset />
+    <x-marketing.faq.offset />
 
     {{-- Offset - Custom --}}
-    <x-marketing.blocks.faq.offset
+    <x-marketing.faq.offset
             title="Common Questions"
             description="Have more questions? Contact our"
             supportLinkText="help desk"
@@ -74,10 +74,10 @@
     {{-- Footer Components --}}
 
     {{-- 4 Column - Basic --}}
-    <x-marketing.blocks.footer.4-column />
+    <x-marketing.footer.4-column />
 
     {{-- 4 Column - Custom --}}
-    <x-marketing.blocks.footer.4-column
+    <x-marketing.footer.4-column
             logoSrc="/images/logo.svg"
             logoAlt="Acme Inc"
             :sections="[
@@ -115,10 +115,10 @@
     />
 
     {{-- 4 Column Dark - Basic --}}
-    <x-marketing.blocks.footer.4-column-dark />
+    <x-marketing.footer.4-column-dark />
 
     {{-- 4 Column Dark - Custom --}}
-    <x-marketing.blocks.footer.4-column-dark
+    <x-marketing.footer.4-column-dark
             logoSrc="/images/logo-white.svg"
             logoAlt="Acme Inc"
             :sections="[
@@ -157,10 +157,10 @@
     />
 
     {{-- Simple - Basic --}}
-    <x-marketing.blocks.footer.simple />
+    <x-marketing.footer.simple />
 
     {{-- Simple - Custom --}}
-    <x-marketing.blocks.footer.simple
+    <x-marketing.footer.simple
             :menuItems="[
         ['name' => 'Home', 'url' => '/'],
         ['name' => 'Features', 'url' => '/features'],
@@ -172,10 +172,10 @@
     />
 
     {{-- Simple Dark - Basic --}}
-    <x-marketing.blocks.footer.simple-dark />
+    <x-marketing.footer.simple-dark />
 
     {{-- Simple Dark - Custom --}}
-    <x-marketing.blocks.footer.simple-dark
+    <x-marketing.footer.simple-dark
             :menuItems="[
         ['name' => 'Solutions', 'url' => '/solutions'],
         ['name' => 'Resources', 'url' => '/resources'],
@@ -188,28 +188,28 @@
     {{-- Header Components --}}
 
     {{-- Simple - Basic --}}
-    <x-marketing.blocks.header.simple />
+    <x-marketing.header.simple />
 
     {{-- Simple - Custom --}}
-    <x-marketing.blocks.header.simple
+    <x-marketing.header.simple
             title="Welcome to Our Platform"
             description="The most comprehensive solution for managing your business operations and accelerating growth."
     />
 
     {{-- Centered - Basic --}}
-    <x-marketing.blocks.header.centered />
+    <x-marketing.header.centered />
 
     {{-- Centered - Custom --}}
-    <x-marketing.blocks.header.centered
+    <x-marketing.header.centered
             title="Customer Success Center"
             description="Everything you need to get the most out of our platform and supercharge your productivity."
     />
 
     {{-- Centered with Eyebrow - Basic --}}
-    <x-marketing.blocks.header.centered-with-eyebrow />
+    <x-marketing.header.centered-with-eyebrow />
 
     {{-- Centered with Eyebrow - Custom --}}
-    <x-marketing.blocks.header.centered-with-eyebrow
+    <x-marketing.header.centered-with-eyebrow
             eyebrow="Introducing our latest feature"
             title="AI-Powered Analytics"
             description="Gain deeper insights into your data with our new machine learning algorithms that automatically identify patterns and opportunities."
@@ -218,10 +218,10 @@
     {{-- Hero Components --}}
 
     {{-- Simple Centered - Basic --}}
-    <x-marketing.blocks.hero.simple-centered />
+    <x-marketing.hero.simple-centered />
 
     {{-- Simple Centered - Custom --}}
-    <x-marketing.blocks.hero.simple-centered
+    <x-marketing.hero.simple-centered
             announcement="New features just released!"
             announcementUrl="/whats-new"
             title="Simplify your workflow, amplify your results"
@@ -233,10 +233,10 @@
     />
 
     {{-- Split with Screenshot - Basic --}}
-    <x-marketing.blocks.hero.split-with-screenshot />
+    <x-marketing.hero.split-with-screenshot />
 
     {{-- Split with Screenshot - Custom --}}
-    <x-marketing.blocks.hero.split-with-screenshot
+    <x-marketing.hero.split-with-screenshot
             logoSrc="/images/logo.svg"
             logoAlt="YourBrand"
             tagLabel="New"
@@ -254,10 +254,10 @@
     {{-- Logo Cloud Components --}}
 
     {{-- Simple - Basic --}}
-    <x-marketing.blocks.logo-cloud.simple />
+    <x-marketing.logo-cloud.simple />
 
     {{-- Simple - Custom --}}
-    <x-marketing.blocks.logo-cloud.simple
+    <x-marketing.logo-cloud.simple
             heading="Trusted by innovative companies worldwide"
             :logos="[
         [
@@ -286,10 +286,10 @@
     {{-- Pricing Components --}}
 
     {{-- Single Price with Details - Basic --}}
-    <x-marketing.blocks.pricing.single-price-with-details />
+    <x-marketing.pricing.single-price-with-details />
 
     {{-- Single Price with Details - Custom --}}
-    <x-marketing.blocks.pricing.single-price-with-details
+    <x-marketing.pricing.single-price-with-details
             title="Straightforward pricing for everyone"
             description="No hidden fees, no complicated tiers. Just one simple plan that grows with your needs."
             planTitle="Pro Membership"
@@ -310,10 +310,10 @@
     />
 
     {{-- Two Tiers - Basic --}}
-    <x-marketing.blocks.pricing.two-tiers />
+    <x-marketing.pricing.two-tiers />
 
     {{-- Two Tiers - Custom --}}
-    <x-marketing.blocks.pricing.two-tiers
+    <x-marketing.pricing.two-tiers
             heading="Plans"
             title="Find the perfect plan for your needs"
             description="Whether you're just starting out or scaling up, we have a plan that's right for you."
@@ -354,10 +354,10 @@
     />
 
     {{-- Three Tiers - Basic --}}
-    <x-marketing.blocks.pricing.three-tiers />
+    <x-marketing.pricing.three-tiers />
 
     {{-- Three Tiers - Custom --}}
-    <x-marketing.blocks.pricing.three-tiers
+    <x-marketing.pricing.three-tiers
             heading="Pricing Options"
             title="Choose the perfect plan"
             description="Whether you're an individual creator or a large organization, we have a plan designed for your specific needs."
@@ -413,10 +413,10 @@
     {{-- Stats Components --}}
 
     {{-- Simple - Basic --}}
-    <x-marketing.blocks.stats.simple />
+    <x-marketing.stats.simple />
 
     {{-- Simple - Custom --}}
-    <x-marketing.blocks.stats.simple
+    <x-marketing.stats.simple
             :stats="[
         [
             'value' => '99.9%',
@@ -440,10 +440,10 @@
     {{-- Team Components --}}
 
     {{-- Grid - Basic --}}
-    <x-marketing.blocks.team.grid />
+    <x-marketing.team.grid />
 
     {{-- Grid - Custom --}}
-    <x-marketing.blocks.team.grid
+    <x-marketing.team.grid
             title="Meet our talented team"
             description="The brilliant minds behind our success, working together to deliver exceptional results for our clients."
             :team="[
@@ -481,10 +481,10 @@
     />
 
     {{-- Small Images - Basic --}}
-    <x-marketing.blocks.team.small-images />
+    <x-marketing.team.small-images />
 
     {{-- Small Images - Custom --}}
-    <x-marketing.blocks.team.small-images
+    <x-marketing.team.small-images
             title="Our Leadership"
             description="A diverse group of experienced professionals steering our company toward innovation and excellence."
             :team="[
@@ -514,10 +514,10 @@
     {{-- Testimonial Components --}}
 
     {{-- With Star Rating - Basic --}}
-    <x-marketing.blocks.testimonial.with-star-rating />
+    <x-marketing.testimonial.with-star-rating />
 
     {{-- With Star Rating - Custom --}}
-    <x-marketing.blocks.testimonial.with-star-rating
+    <x-marketing.testimonial.with-star-rating
             quote="This platform has completely transformed how we operate. The intuitive interface and powerful features have helped us increase productivity by over 40%. The customer support team is also incredibly responsive and helpful."
             name="Jennifer Martinez"
             position="Director of Operations, TechCorp"
@@ -526,10 +526,10 @@
     />
 
     {{-- Off-White Grid - Basic --}}
-    <x-marketing.blocks.testimonial.off-white-grid />
+    <x-marketing.testimonial.off-white-grid />
 
     {{-- Off-White Grid - Custom --}}
-    <x-marketing.blocks.testimonial.off-white-grid
+    <x-marketing.testimonial.off-white-grid
             title="Client Feedback"
             subtitle="What our clients are saying about us"
             :testimonials="[
