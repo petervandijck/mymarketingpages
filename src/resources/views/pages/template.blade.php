@@ -171,19 +171,7 @@
             copyright="© 2025 YourBrand, Inc. All rights reserved."
     />
 
-    {{-- Simple Dark - Basic --}}
-    <x-marketing.footer.simple-dark />
 
-    {{-- Simple Dark - Custom --}}
-    <x-marketing.footer.simple-dark
-            :menuItems="[
-        ['name' => 'Solutions', 'url' => '/solutions'],
-        ['name' => 'Resources', 'url' => '/resources'],
-        ['name' => 'Support', 'url' => '/support'],
-        ['name' => 'Company', 'url' => '/company']
-    ]"
-            copyright="© 2025 YourBrand. All rights reserved."
-    />
 
     {{-- Header Components --}}
 
@@ -558,7 +546,7 @@
             'image' => '/images/testimonials/elena.jpg'
         ],
         [
-            'quote' => 'The platform's analytics capabilities have given us insights we never had before.',
+            'quote' => 'The platform\'s analytics capabilities have given us insights we never had before.',
             'name' => 'Thomas Lee',
             'handle' => '@thomaslee',
             'image' => '/images/testimonials/thomas.jpg'
