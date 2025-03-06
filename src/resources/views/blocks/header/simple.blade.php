@@ -1,5 +1,5 @@
 @props([
-    'title' => 'Support center',
+    'title' => 'Lorem Ipsum',
     'description' => 'Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat.',
     'align' => 'left' // options: 'left', 'center'
 ])
