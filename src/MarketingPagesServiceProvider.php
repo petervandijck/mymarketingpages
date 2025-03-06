@@ -4,6 +4,7 @@ namespace Petervandijck\MarketingPages;
 
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Facades\Blade;
+use Illuminate\Filesystem\Filesystem;
 
 class MarketingPagesServiceProvider extends ServiceProvider
 {
@@ -12,12 +13,8 @@ class MarketingPagesServiceProvider extends ServiceProvider
         // Load views from your package
         $this->loadViewsFrom(__DIR__ . '/resources/views', 'marketing');
 
-        // Register components directly - make sure this comes after loadViewsFrom
-        Blade::component('marketing::blocks.header.simple', 'marketing.header.simple');
-        Blade::component('marketing::blocks.cta.simple-centered', 'marketing.cta.simple-centered');
-        Blade::component('marketing::blocks.cta.simple-centered-dark', 'marketing.cta.simple-centered-dark');
-        Blade::component('marketing::blocks.cta.simple-stacked', 'marketing.cta.simple-stacked');
-        // Add more components manually as needed
+        // Auto-register all block components
+        $this->registerBlockComponents();
 
         // Publish views
         $this->publishes([
@@ -31,5 +28,36 @@ class MarketingPagesServiceProvider extends ServiceProvider
         $this->publishes([
             __DIR__ . '/routes/web.php' => base_path('routes/marketing.php'),
         ], 'marketing-pages-routes');
+    }
+
+    /**
+     * Auto-register all block components found in the blocks directory
+     */
+    private function registerBlockComponents(): void
+    {
+        $filesystem = new Filesystem();
+        $blocksPath = __DIR__ . '/resources/views/blocks';
+
+        // Make sure blocks directory exists
+        if (!$filesystem->isDirectory($blocksPath)) {
+            return;
+        }
+
+        // Loop through each block type directory (header, cta, etc.)
+        foreach ($filesystem->directories($blocksPath) as $blockTypeDir) {
+            $blockType = basename($blockTypeDir);
+
+            // Loop through blade files in each block type directory
+            foreach ($filesystem->files($blockTypeDir) as $file) {
+                if ($file->getExtension() === 'php') {
+                    $fileName = $file->getFilenameWithoutExtension();
+
+                    // Register the component
+                    $viewName = "marketing::blocks.{$blockType}.{$fileName}";
+                    $aliasName = "marketing.{$blockType}.{$fileName}";
+                    Blade::component($viewName, $aliasName);
+                }
+            }
+        }
     }
 }
