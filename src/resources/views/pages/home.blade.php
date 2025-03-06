@@ -41,26 +41,12 @@
     </style>
 </head>
 <body>
-<header>
-    <div class="container">
-        <h2>Your Company</h2>
-    </div>
-</header>
 
-<div class="hero">
-    <div class="container">
-        <h1>Welcome to Our Marketing Page</h1>
-        <p>This is a simple marketing page template you can customize for your needs.</p>
-    </div>
-</div>
+<div>Hello</div>
 
-<main class="container">
-    <h2>Our Services</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor, nisl eget ultricies tincidunt, nisl nisl aliquam nisl, eget ultricies nisl nisl eget nisl.</p>
-</main>
+<x-marketing.header.simple title="Call To Action" />
 
-<footer>
-    @include('marketing.footer')
-</footer>
+
+
 </body>
 </html>
