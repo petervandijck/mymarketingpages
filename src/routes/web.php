@@ -2,6 +2,20 @@
 
 use Illuminate\Support\Facades\Route;
 
-Route::get('/marketing', function () {
-    return view('marketing.home');
+/**
+ * Marketing pages
+ *
+ * /                    -> loggedout homepage
+ * /features
+ * /why                 -> use cases and differentiators
+ * /pricing
+ * /about/team
+ * /about/vision
+ * /resources/faq
+ * /resources/support
+ * /legal/toc
+ * /legal/privacy
+ */
+Route::get('/', function () {
+    return view('marketing.pages.home');
 })->name('marketing.home');

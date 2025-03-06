@@ -7,6 +7,23 @@ This package provides:
 - Easy-to-customize blade components
 - Routes for marketing pages
 
+
+Until we publish it on packagist, you have to add this to composer.json before installing it
+```bash
+"repositories": [
+{
+"type": "vcs",
+"url": "https://github.com/petervandijck/mymarketingpages"
+}
+]
+```
+and then run
+```bash
+composer update
+composer require petervandijck/mymarketingpages:dev-main
+```
+
+
 ## Installation
 
 Install via composer:
