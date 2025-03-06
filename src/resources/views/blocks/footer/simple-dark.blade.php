@@ -1,12 +1,21 @@
+@props([
+    'menuItems' => [
+        ['name' => 'About', 'url' => '#'],
+        ['name' => 'Blog', 'url' => '#'],
+        ['name' => 'Jobs', 'url' => '#'],
+        ['name' => 'Press', 'url' => '#'],
+        ['name' => 'Accessibility', 'url' => '#'],
+        ['name' => 'Partners', 'url' => '#'],
+    ],
+    'copyright' => '© 2024 Your Company, Inc. All rights reserved.'
+])
+
 <footer class="bg-gray-900">
     <div class="mx-auto max-w-7xl overflow-hidden px-6 py-20 sm:py-24 lg:px-8">
         <nav class="-mb-6 flex flex-wrap justify-center gap-x-12 gap-y-3 text-sm/6" aria-label="Footer">
-            <a href="#" class="text-gray-400 hover:text-white">About</a>
-            <a href="#" class="text-gray-400 hover:text-white">Blog</a>
-            <a href="#" class="text-gray-400 hover:text-white">Jobs</a>
-            <a href="#" class="text-gray-400 hover:text-white">Press</a>
-            <a href="#" class="text-gray-400 hover:text-white">Accessibility</a>
-            <a href="#" class="text-gray-400 hover:text-white">Partners</a>
+            @foreach($menuItems as $item)
+                <a href="{{ $item['url'] }}" class="text-gray-400 hover:text-white">{{ $item['name'] }}</a>
+            @endforeach
         </nav>
         <div class="mt-16 flex justify-center gap-x-10">
             <a href="#" class="text-gray-400 hover:text-gray-300">
@@ -40,6 +49,7 @@
                 </svg>
             </a>
         </div>
-        <p class="mt-10 text-center text-sm/6 text-gray-400">&copy; 2024 Your Company, Inc. All rights reserved.</p>
+        <p class="mt-10 text-center text-sm/6 text-gray-400">{{ $copyright }}</p>
+        {{ $slot ?? '' }}
     </div>
 </footer>

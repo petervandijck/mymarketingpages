@@ -1,7 +1,6 @@
 @props([
     'logoSrc' => 'https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&shade=600',
     'logoAlt' => 'Company name',
-    'logoHeight' => 'h-9',
     'sections' => [
         [
             'title' => 'Solutions',
@@ -44,7 +43,7 @@
 <footer class="bg-white">
     <div class="mx-auto max-w-7xl px-6 py-16 sm:py-24 lg:px-8 lg:py-32">
         <div class="xl:grid xl:grid-cols-3 xl:gap-8">
-            <img class="{{ $logoHeight }}" src="{{ $logoSrc }}" alt="{{ $logoAlt }}">
+            <img class="h-9" src="{{ $logoSrc }}" alt="{{ $logoAlt }}">
             <div class="mt-16 grid grid-cols-2 gap-8 xl:col-span-2 xl:mt-0">
                 <div class="md:grid md:grid-cols-2 md:gap-8">
                     @if(isset($sections[0]))
