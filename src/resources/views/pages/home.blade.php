@@ -1,16 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body>
+@extends('marketing.modules.global.layout')
 
-<div>Hello</div>
+@section('pagetitle', 'Page Title')
 
-<x-marketing.header.simple title="Call To Action" />
+@section('content')
 
-</body>
-</html>
+    <p>This is the homepage.</p>
+
+@endsection
