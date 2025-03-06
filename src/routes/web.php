@@ -13,6 +13,7 @@ use Illuminate\Support\Facades\Route;
  * /about/vision
  * /resources/faq
  * /resources/support
+ * /resources/contact
  * /legal/toc
  * /legal/privacy
  */
