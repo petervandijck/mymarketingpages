@@ -7,7 +7,7 @@ use Illuminate\Support\Facades\Route;
  */
 
 Route::view('/', 'marketing.pages.home')->name('home'); // Loggedout homepage
-Route::view('/features', 'marketing.pages.')->name('features');
+Route::view('/features', 'marketing.pages.features')->name('features');
 Route::view('/pricing', 'marketing.pages.pricing')->name('pricing');
 Route::view('/about/team', 'marketing.pages.about.team')->name('team');
 Route::view('/about/vision', 'marketing.pages.about.vision')->name('vision');
