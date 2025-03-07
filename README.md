@@ -2,13 +2,8 @@
 
 A set of default blade marketing pages and elements for new Laravel projects.
 
-This package provides:
-- Pre-built marketing page templates
-- Easy-to-customize blade components
-- Routes for marketing pages
-
-
-Until we publish it on packagist, you have to add this to composer.json before installing it
+## Installation
+Add this to composer.json (because it is not on packagist)
 ```bash
 "repositories": [
 {
@@ -17,59 +12,24 @@ Until we publish it on packagist, you have to add this to composer.json before i
 }
 ]
 ```
-and then run
-```bash
-composer update
-composer require petervandijck/mymarketingpages
-```
-
-
-## Installation
-
 Install via composer:
 
 ```bash
 composer require petervandijck/marketing-pages
 ```
-
-The package will automatically register its service provider if you're using Laravel 5.5+.
-
-## Usage
-
-### Publishing Assets
-
-Publish the views:
+Optionally but probably, publish the views and routes:
 
 ```bash
 php artisan vendor:publish --tag=marketing-pages-views
 ```
-
-Optionally, publish the routes for customization:
+and
 
 ```bash
 php artisan vendor:publish --tag=marketing-pages-routes
 ```
-
-### Accessing Pages
-
-Once installed, you can access the marketing home page at:
-
-```
-/marketing
-```
-
-### Customizing Templates
-
-Edit the published templates in `resources/views/marketing/` to customize them for your project.
-
-## Components
-
-### Available Pages
-- Home (`marketing.home`)
-
-### Available Components
-- Footer (`marketing.footer`)
-
-## License
-
-MIT
+## Usage
+- Marketing routes are in a separate /routes/marketing.php file
+- Views are in /views/marketing/
+  - Blocks (/views/marketing/blocks) are UI blocks that can be included in views.
+  - Modules are re-usable modules throughout all your pages. 
+  - Pages are the marketing pages
