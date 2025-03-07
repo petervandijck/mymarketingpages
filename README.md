@@ -27,6 +27,9 @@ and
 ```bash
 php artisan vendor:publish --tag=marketing-pages-routes
 ```
+
+Finally, delete your home / route in web.php and delete the home view in /views
+
 ## Usage
 - Marketing routes are in a separate /routes/marketing.php file
 - Views are in /views/marketing/
