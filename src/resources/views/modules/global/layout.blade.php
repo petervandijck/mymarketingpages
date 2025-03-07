@@ -9,11 +9,11 @@
 </head>
 <body>
 
-    @include('modules.global.nav')
+    @include('marketing.modules.global.nav')
 
     @yield('content')
 
-    @include('modules.global.footer')
+    @include('marketing.modules.global.footer')
 
 </body>
 </html>
