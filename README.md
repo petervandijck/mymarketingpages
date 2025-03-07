@@ -15,7 +15,7 @@ Add this to composer.json (because it is not on packagist)
 Install via composer:
 
 ```bash
-composer require petervandijck/marketing-pages
+composer require petervandijck/mymarketingpages
 ```
 Optionally but probably, publish the views and routes:
 
@@ -28,7 +28,9 @@ and
 php artisan vendor:publish --tag=marketing-pages-routes
 ```
 
-Finally, delete your home / route in web.php and delete the home view in /views
+Finally, 
+- delete your home / route in web.php so that you can access home
+- and delete the home view in /views since you no longer are using it
 
 ## Usage
 - Marketing routes are in a separate /routes/marketing.php file
