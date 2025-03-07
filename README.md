@@ -20,7 +20,7 @@ Until we publish it on packagist, you have to add this to composer.json before i
 and then run
 ```bash
 composer update
-composer require petervandijck/mymarketingpages:dev-main
+composer require petervandijck/mymarketingpages
 ```
 
 

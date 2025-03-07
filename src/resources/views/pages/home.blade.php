@@ -1,9 +1,12 @@
 @extends('marketing.modules.global.layout')
 
-@section('pagetitle', 'Page Title')
+@section('pagetitle', 'Welcome')
 
 @section('content')
 
-    <p>This is the homepage.</p>
+    <x-marketing.header.simple
+            title="The easiest way to do this."
+            description="A subtitle."
+    />
 
 @endsection

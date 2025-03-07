@@ -1,7 +1,8 @@
-<header class="bg-white">
+<header x-data="{ navopen: false }"
+        class="bg-white" >
     <nav class="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
         <div class="flex lg:flex-1">
-            <a href="#" class="-m-1.5 p-1.5">
+            <a href="/" class="-m-1.5 p-1.5">
                 <span class="sr-only">Your Company</span>
                 <img class="h-8 w-auto" src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&shade=600" alt="">
             </a>
@@ -15,17 +16,18 @@
             </button>
         </div>
         <div class="hidden lg:flex lg:gap-x-12">
-            <a href="#" class="text-sm/6 font-semibold text-gray-900">Product</a>
-            <a href="#" class="text-sm/6 font-semibold text-gray-900">Features</a>
-            <a href="#" class="text-sm/6 font-semibold text-gray-900">Marketplace</a>
-            <a href="#" class="text-sm/6 font-semibold text-gray-900">Company</a>
+            <a href="/" class="text-sm/6 font-semibold text-gray-900">Home</a>
+            <a href="/features" class="text-sm/6 font-semibold text-gray-900">Features</a>
+            <a href="/pricing" class="text-sm/6 font-semibold text-gray-900">Pricing</a>
+            <a href="/why" class="text-sm/6 font-semibold text-gray-900">Our Vision</a>
         </div>
         <div class="hidden lg:flex lg:flex-1 lg:justify-end">
             <a href="#" class="text-sm/6 font-semibold text-gray-900">Log in <span aria-hidden="true">&rarr;</span></a>
         </div>
     </nav>
     <!-- Mobile menu, show/hide based on menu open state. -->
-    <div class="lg:hidden" role="dialog" aria-modal="true">
+    <div x-show="navopen"
+            class="lg:hidden" role="dialog" aria-modal="true">
         <!-- Background backdrop, show/hide based on slide-over state. -->
         <div class="fixed inset-0 z-10"></div>
         <div class="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
